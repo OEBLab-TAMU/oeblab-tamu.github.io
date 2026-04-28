@@ -21,6 +21,10 @@ const newsItems = [
     img:"images/AnybodyExo.jpg",
     link:"https://www.anybodytech.com/webcasts/biomechanical-simulation-of-passive-back-support-exoskeletons-effects-of-actuator-strength-on-musculoskeletal-load-and-contact-stress/",
     linkText:"Watch Webcast →"},
+  { 
+    date:"2025", tag:"Publication", title:"OEB Lat HFES2025",
+    desc:"OEB Lab members presented research findings at the Human Factors and Ergonomics Society Annual Meeting in Chicago.",
+    img:"images/HFES2025.jpg" },
   {
     date:" February 2025", tag:"Job",
     title:"Dr, Choi named an Assistant Professor",
@@ -34,17 +38,16 @@ const newsItems = [
   { 
     date:"2024", tag:"Grant", title:"NSC MSD Solution Lab Grant",
     desc:"Mina awarded to idevelops an AI-powered tool to assess workplace injuries.",
-    img:"images/forestry.jpg" },
+    img:"images/MinaAI.jpg" },
+ 
   { 
-    date:"2025", tag:"Publication", title:"New Paper Published in Applied Ergonomics",
-    desc:"Choi et al. published a study on back-support exoskeletons during simulated manual timber felling.",
-    img:"images/news-publication.jpg" },
+    date:"2023", tag:"Grant", title:"NIOSH Grant to Study Exoskeletons in Commercial Fishing",
+    desc:"OEB Lab awarded with $950K to evaluate exoskeletons to address risks of musculoskeletal injuries among commercial fishermen.",
+    img:"images/Fishing.jpeg" },
   { 
-    date:"2025", tag:"Conference", title:"Presentations at HFES Annual Meeting",
-    desc:"OEB Lab members presented research findings at the Human Factors and Ergonomics Society Annual Meeting.", img:"images/news-conference.jpg" },
-  { 
-    date:"2024", tag:"Collaboration", title:"New Industry Collaboration with SAIF Corporation",
-    desc:"The OEB Lab partners with SAIF Corporation to analyze workers' compensation claims data for Oregon's logging industry.", img:"images/news-collaboration.jpg" },
+    date:"2022", tag:"Grant", title:"U.S. EDA Build Back Better grant ($5.5M)",
+    desc:"OEB Lab will lead an effort to evaluate exoskeletons in forestry operation.",
+    img:"images/Fieldforest.jpeg" },
   { 
     date:"2023", tag:"Grant", title:"NIOSH Grant to Study Exoskeletons Among Commercial Fishermen",
     desc:"Jay Kim and team received a new NIOSH grant ($950K) to study exoskeletons among commercial fishermen.", img:"images/news-fishing-grant.jpg" },

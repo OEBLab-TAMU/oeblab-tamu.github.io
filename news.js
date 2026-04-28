@@ -22,14 +22,14 @@ const newsItems = [
     link:"https://www.anybodytech.com/webcasts/biomechanical-simulation-of-passive-back-support-exoskeletons-effects-of-actuator-strength-on-musculoskeletal-load-and-contact-stress/",
     linkText:"Watch Webcast →"},
   { 
-    date:"2025", tag:"Publication", title:"OEB Lat HFES2025",
+    date:"2025", tag:"Conference", title:"OEB Lat HFES2025",
     desc:"OEB Lab members presented research findings at the Human Factors and Ergonomics Society Annual Meeting in Chicago.",
-    img:"images/HFES2025.jpg" },
+    img:"images/HFES2025.jpeg" },
   {
     date:" February 2025", tag:"Job",
-    title:"Dr, Choi named an Assistant Professor",
-    desc:"Our postdoctoral resaerch, Dr. Seobin Choi, will be joining the faculty of Incheon National University in South Korea starting from March 2025.",
-    img:"images/seobin-choi-220px.webp"},
+    title:"Dr. Choi named an Assistant Professor",
+    desc:"Our postdoctoral resaerch, Dr. Seobin Choi, will be joining the faculty of Incheon National University in South Korea starting from March 2025. Congratulations!",
+    img:"images/logo.png"},
   {
     date:" August 2024", tag:"Relocation",
     title:"OEB Lab Joins Texas A&M School of Public Health",

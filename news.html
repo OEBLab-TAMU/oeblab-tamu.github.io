@@ -346,8 +346,9 @@ function go(p){
   page=p; renderNews(page); renderPager();
   document.getElementById('news-list').scrollIntoView({behavior:'smooth',block:'start'});
 }
-
+document.addEventListener("DOMContentLoaded", () => {
 renderNews(1); renderPager();
+});
 </script>
 </body>
 </html>

@@ -26,7 +26,7 @@ const newsItems = [
     linkText:"Watch Webcast →"
   },
   { date:" August 2025", tag:"Relocation", title:"OEB Lab Joins Texas A&M School of Public Health",
-    desc:"The OEB Laboratory has relocated from Oregon State University to Texas A&M University School of Public Health in College Station, TX. We look forward to new collaborations and partnerships at Texas A&M." },
+    desc:"The OEB Laboratory has relocated from Oregon State University to Texas A&M University School of Public Health in College Station, TX. We look forward to new collaborations and partnerships at Texas A&M." , img:"images/logo.png"},
   { date:"2025", tag:"Grant", title:"OEB Lab Receives Smart Forestry Research Grant",
     desc:"Funding awarded to investigate exoskeleton technology and wearable robotics for forestry and logging workers.", img:"images/forestry.jpg" },
   { date:"2025", tag:"Publication", title:"New Paper Published in Applied Ergonomics",
@@ -98,4 +98,5 @@ function go(p){
   document.getElementById('news-list').scrollIntoView({behavior:'smooth',block:'start'});
 }
 document.addEventListener("DOMContentLoaded", () => {
-renderNews(1); renderPager();}
+renderNews(1); renderPager();
+});

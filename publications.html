@@ -86,6 +86,8 @@ footer strong{color:var(--gold);}
       <span style="background:#2a6496;color:white;font-size:0.68rem;font-weight:700;padding:3px 9px;border-radius:2px;">Healthcare</span>
     </div>
   </div>
+  
+<div id="pub-list">
   <div style="display:flex;flex-direction:column;gap:0.85rem;margin-bottom:2.2rem;"><div style="background:var(--white);border-radius:6px;padding:1.3rem 1.5rem;box-shadow:var(--shadow);display:flex;gap:1.4rem;align-items:flex-start;border-left:4px solid var(--gold);">
   <div style="flex-shrink:0;width:50px;text-align:center;padding-top:2px;">
     <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--maroon);">2023</div>
@@ -179,7 +181,65 @@ footer strong{color:var(--gold);}
     <a href="https://scholar.google.com/citations?user=ohaGYfMAAAAJ&hl=en" target="_blank" class="btn btn-primary">Google Scholar &rarr;</a>
     <a href=" https://www.ncbi.nlm.nih.gov/myncbi/jeong%20ho.kim.1/bibliography/public/" target="_blank" class="btn btn-outline">PubMed &rarr;</a>
   </div>
+  </div>
+<div id="pub-pagination" style="display:flex;justify-content:center;align-items:center;gap:0.5rem;margin-top:2rem;flex-wrap:wrap;"></div>
 </div></section>
 <footer><div class="footer-inner"><img src="images/logo.png" alt="OEB" class="footer-logo"/><div class="footer-div"></div><div class="footer-links"><a href="index.html">Home</a><a href="research.html">Research</a><a href="team.html">Team</a><a href="publications.html">Publications</a><a href="news.html">News</a><a href="sponsors.html">Sponsors</a><a href="dissemination.html">Dissemination</a><a href="contact.html">Contact</a></div><p><strong>OEB Laboratory</strong> &middot; School of Public Health &middot; Texas A&amp;M University &middot; College Station, TX 77843</p><p style="margin-top:0.4rem;font-style:italic;color:rgba(255,255,255,0.3);">Be Well, Work Well</p><p style="margin-top:0.3rem;">&copy; 2025 Occupational Ergonomics &amp; Biomechanics Laboratory</p></div></footer>
+
+<script>
+  const ITEMS_PER_PAGE = 10;
+  const list = document.getElementById('pub-list');
+  const pagination = document.getElementById('pub-pagination');
+  const cards = Array.from(list.children);
+  const totalPages = Math.ceil(cards.length / ITEMS_PER_PAGE);
+  let currentPage = 1;
+
+  function showPage(page) {
+    currentPage = page;
+    cards.forEach((card, i) => {
+      card.style.display = (i >= (page - 1) * ITEMS_PER_PAGE && i < page * ITEMS_PER_PAGE) ? '' : 'none';
+    });
+    renderPagination();
+    window.scrollTo({ top: list.offsetTop - 80, behavior: 'smooth' });
+  }
+
+  function renderPagination() {
+    pagination.innerHTML = '';
+
+    const btnStyle = (active) =>
+      `display:inline-flex;align-items:center;justify-content:center;min-width:2rem;height:2rem;padding:0 0.6rem;border-radius:4px;border:1px solid ${active ? 'var(--maroon)' : '#ccc'};background:${active ? 'var(--maroon)' : 'transparent'};color:${active ? '#fff' : 'inherit'};font-size:0.85rem;cursor:pointer;font-family:inherit;`;
+
+    // Prev button
+    const prev = document.createElement('button');
+    prev.textContent = '←';
+    prev.style.cssText = btnStyle(false);
+    prev.disabled = currentPage === 1;
+    prev.style.opacity = currentPage === 1 ? '0.4' : '1';
+    prev.onclick = () => showPage(currentPage - 1);
+    pagination.appendChild(prev);
+
+    // Page number buttons
+    for (let p = 1; p <= totalPages; p++) {
+      const btn = document.createElement('button');
+      btn.textContent = p;
+      btn.style.cssText = btnStyle(p === currentPage);
+      btn.onclick = () => showPage(p);
+      pagination.appendChild(btn);
+    }
+
+    // Next button
+    const next = document.createElement('button');
+    next.textContent = '→';
+    next.style.cssText = btnStyle(false);
+    next.disabled = currentPage === totalPages;
+    next.style.opacity = currentPage === totalPages ? '0.4' : '1';
+    next.onclick = () => showPage(currentPage + 1);
+    pagination.appendChild(next);
+  }
+
+  if (totalPages > 1) {
+    showPage(1);
+  }
+</script>
 </body>
 </html>

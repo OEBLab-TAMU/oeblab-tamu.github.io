@@ -243,6 +243,57 @@ footer strong{color:var(--gold);}
 </div></section>
 <footer><div class="footer-inner"><img src="images/logo.png" alt="OEB" class="footer-logo"/><div class="footer-div"></div><div class="footer-links"><a href="index.html">Home</a><a href="research.html">Research</a><a href="team.html">Team</a><a href="publications.html">Publications</a><a href="news.html">News</a><a href="sponsors.html">Sponsors</a><a href="dissemination.html">Dissemination</a><a href="contact.html">Contact</a></div><p><strong>OEB Laboratory</strong> &middot; School of Public Health &middot; Texas A&amp;M University &middot; College Station, TX 77843</p><p style="margin-top:0.4rem;font-style:italic;color:rgba(255,255,255,0.3);">Be Well, Work Well</p><p style="margin-top:0.3rem;">&copy; 2025 Occupational Ergonomics &amp; Biomechanics Laboratory</p></div></footer>
 
+  <script>
+  const ITEMS_PER_PAGE = 10;
+  const pagination = document.getElementById('pub-pagination');
+
+  // Target the inner wrapper div that actually contains the cards
+  const list = document.getElementById('pub-list');
+  const cards = Array.from(list.children);
+  const totalPages = Math.ceil(cards.length / ITEMS_PER_PAGE);
+  let currentPage = 1;
+
+  function showPage(page) {
+    currentPage = page;
+    cards.forEach((card, i) => {
+      card.style.display = (i >= (page - 1) * ITEMS_PER_PAGE && i < page * ITEMS_PER_PAGE) ? '' : 'none';
+    });
+    renderPagination();
+    window.scrollTo({ top: list.offsetTop - 80, behavior: 'smooth' });
+  }
+
+  function renderPagination() {
+    pagination.innerHTML = '';
+
+    const btnStyle = (active) =>
+      `display:inline-flex;align-items:center;justify-content:center;min-width:2rem;height:2rem;padding:0 0.6rem;border-radius:4px;border:1px solid ${active ? 'var(--maroon)' : '#ccc'};background:${active ? 'var(--maroon)' : 'transparent'};color:${active ? '#fff' : 'inherit'};font-size:0.85rem;cursor:pointer;font-family:inherit;`;
+
+    const prev = document.createElement('button');
+    prev.textContent = '←';
+    prev.style.cssText = btnStyle(false);
+    prev.disabled = currentPage === 1;
+    prev.style.opacity = currentPage === 1 ? '0.4' : '1';
+    prev.onclick = () => showPage(currentPage - 1);
+    pagination.appendChild(prev);
+
+    for (let p = 1; p <= totalPages; p++) {
+      const btn = document.createElement('button');
+      btn.textContent = p;
+      btn.style.cssText = btnStyle(p === currentPage);
+      btn.onclick = () => showPage(p);
+      pagination.appendChild(btn);
+    }
+
+    const next = document.createElement('button');
+    next.textContent = '→';
+    next.style.cssText = btnStyle(false);
+    next.disabled = currentPage === totalPages;
+    next.style.opacity = currentPage === totalPages ? '0.4' : '1';
+    next.onclick = () => showPage(currentPage + 1);
+    pagination.appendChild(next);
+  }
+
+  showPage(1);
 </script>
 
 </body>

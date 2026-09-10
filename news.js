@@ -1,5 +1,24 @@
 const newsItems = [
   {
+    date:" September 2025", tag:"Grant",
+    title:"Development of Virtual Reality-Based Commercial Fishing Safety Training Program",
+    desc:"This NIOSH-funded randomized controlled trial (RCT) will evaluate whether back-support exoskeletons can reduce physical strain, musculoskeletal pain, and related health outcomes during real-world fishing operations.",
+    img:"images/logo.png"},
+  {
+    date:" September 2025", tag:"Grant",
+    title:"Development of Virtual Reality-Based Commercial Fishing Safety Training Program",
+    desc:"Colloborating with Dr. Jeong at Arizona State Univerity, this NIOSH-funded research will develop virtual reality (VR) commercial fishing safety training programs to supplement existing in-person training initiatives.",
+    img:"images/logo.png"},
+  { 
+    date:"September 2026", tag:"Award", title:"OSU Disseration Completion Award",
+    desc:"Mina Salehi received OSU's dissertation completion award, which is extremely selective, university-wide recognition, with only four to six doctoral students selected across Oregon State University each term. Congrats Mina for your well-deserved recognition!",
+    img:"images/MinaAI.jpg" },
+  {
+    date:" June 2025", tag:"Grant",
+    title:"Development of Ergonomic and Biomechanical Suitability Evaluation Metrics for Active Strength-Assist Wearable Devices in Agricultural Work",
+    desc:"Funded by Rural Development Administration of Korea, We will develop ergonomic and biomechanical suitability evaluation metrics for active wearable devices in agricultural work",
+    img:"images/logo.png"},
+  {
     date:"May 2026", tag:"New Member",
     title:"Dr. Yinong Chen will be joining as as a postdoctoral researcher!",
     desc:"Yinong successfully defended his disseration and will continue working with us as a postdoctural researcher. Looking forward to our continued collaboration.",

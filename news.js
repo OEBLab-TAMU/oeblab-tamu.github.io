@@ -3,7 +3,7 @@ const newsItems = [
     date:" September 2025", tag:"Grant",
     title:"From Laboratory to Deck: A Randomized Controlled Trial of Back-Support Exoskeletons to Reduce Musculoskeletal Injury Risk in Commercial Fishing",
     desc:"This NIOSH-funded randomized controlled trial (RCT) will evaluate whether back-support exoskeletons can reduce physical strain, musculoskeletal pain, and related health outcomes during real-world fishing operations.",
-    img:"images/logo.png"},
+    img:"images/ExoFish.jpeg"},
   {
     date:" September 2025", tag:"Grant",
     title:"Development of Virtual Reality-Based Commercial Fishing Safety Training Program",

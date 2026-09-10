@@ -12,7 +12,7 @@ const newsItems = [
   { 
     date:"September 2026", tag:"Award", title:"OSU Disseration Completion Award",
     desc:"Mina Salehi received OSU's dissertation completion award, which is extremely selective, university-wide recognition, with only four to six doctoral students selected across Oregon State University each term. Congrats Mina for your well-deserved recognition!",
-    img:"images/MinaAI.jpg" },
+    img:"images/Mina.jpg" },
   {
     date:" June 2025", tag:"Grant",
     title:"Development of Ergonomic and Biomechanical Suitability Evaluation Metrics for Active Strength-Assist Wearable Devices in Agricultural Work",
@@ -70,13 +70,17 @@ const newsItems = [
   { 
     date:"2023", tag:"Grant", title:"NIOSH Grant to Study Exoskeletons Among Commercial Fishermen",
     desc:"Jay Kim and team received a new NIOSH grant ($950K) to study exoskeletons among commercial fishermen.", img:"images/news-fishing-grant.jpg" },
-  { date:"2023", tag:"Media", title:"Banger Bar Study Finds Reduced Injury Risk on Crab Boats",
+  {
+    date:"2023", tag:"Media", title:"Banger Bar Study Finds Reduced Injury Risk on Crab Boats",
     desc:"Applied ergonomics study finds fishermen-developed banger bar helps reduce injury risk on Dungeness crab boats.", img:"images/news-banger.jpg" },
-  { date:"2022", tag:"Grant", title:"OSU Team Receives $5.5M Build Back Better Grant",
+  { 
+    date:"2022", tag:"Grant", title:"OSU Team Receives $5.5M Build Back Better Grant",
     desc:"Jay Kim, as Co-PI, will evaluate efficacy of wearable exoskeletons for next-generation forestry operations.", img:"images/news-bbb-grant.jpg" },
-  { date:"2021", tag:"Media", title:"OSU Researchers to Help Make the 'Deadliest Catch' Less Deadly",
+  { 
+    date:"2021", tag:"Media", title:"OSU Researchers to Help Make the 'Deadliest Catch' Less Deadly",
     desc:"A federal grant aims to make Oregon's most dangerous fishing market safer.", img:"images/news-fishing.jpg" },
-  { date:"2021", tag:"Grant", title:"Grant to Help Prevent Injury in Dungeness Crab Industry",
+  { 
+    date:"2021", tag:"Grant", title:"Grant to Help Prevent Injury in Dungeness Crab Industry",
     desc:"Jay Kim and Laurel Kincl will build on existing research with the Dungeness crab fishing industry.", img:"images/news-crab.jpg" },
 ];
 

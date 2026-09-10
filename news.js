@@ -8,7 +8,7 @@ const newsItems = [
     date:" September 2025", tag:"Grant",
     title:"Development of Virtual Reality-Based Commercial Fishing Safety Training Program",
     desc:"Colloborating with Dr. Jeong at Arizona State Univerity, this NIOSH-funded research will develop virtual reality (VR) commercial fishing safety training programs to supplement existing in-person training initiatives.",
-    img:"images/logo.png"},
+    img:"images/VRfish.jpg"},
   { 
     date:"September 2026", tag:"Award", title:"OSU Disseration Completion Award",
     desc:"Mina Salehi received OSU's dissertation completion award, which is extremely selective, university-wide recognition, with only four to six doctoral students selected across Oregon State University each term. Congrats Mina for your well-deserved recognition!",
